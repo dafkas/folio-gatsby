@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import Menu from './menu'
+import About from './about'
 
 const Logo = styled.div`
   font-size:20px;
@@ -18,6 +19,7 @@ const Logo = styled.div`
 const HeaderContainer = styled.div`
   width:100%;
   height:100%;
+  position:relative;
 `;
 
 const WelcomeBox = styled.div`
@@ -105,9 +107,9 @@ export default class Header extends React.Component {
         <Logo>Marvin Holleman</Logo>
         <Menu />
         <Hero>
-          <WelcomeText className='welcome-text'>Hey welkom op mijn website</WelcomeText>
-          <UnderText>Ik ben Marvin Holleman, een creative full-stack developer</UnderText>
-          <AboutButton>Klik hier om meer te lezen over mij</AboutButton>
+          <WelcomeText className='welcome-text'>Hey.. Welkom op mijn website</WelcomeText>
+          <UnderText>Ik ben Marvin Holleman, een creatieve full-stack developer</UnderText>
+          <AboutButton>Klik hier om meer te lezen over mij...</AboutButton>
         </Hero>
       </HeaderContainer>
     );
