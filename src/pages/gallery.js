@@ -151,7 +151,7 @@ const Gallery = () => (
                     <br /><br />Na het registreren en inloggen is het mogelijk om een gallerij aan te maken en daar afbeeldingen aan toe te voegen. Deze kunnen uiteraard ook weer verwijderd worden.<br />
                     <a href="https://github.com/dafkas/gallery" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/projects/gallery.jpg" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1MkiZeyDGIWQu8RicAITbI1liOv_wnhjV" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

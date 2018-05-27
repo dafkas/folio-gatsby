@@ -150,7 +150,7 @@ const Bettershaped = () => (
                     <br />
                     <a href="http://bettershapedworld.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/work/bettershaped.png" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1cNtpukyY4NoQzPMavlk3t9kKBYGbH5_X" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

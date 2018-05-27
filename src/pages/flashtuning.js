@@ -150,7 +150,7 @@ const Flashtuning = () => (
                     <br />
                     <a href="http://www.flashtuning.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/work/flashtuning.png" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1kiHPeXO6soP-Zwws_BqydcxHrFkgvn0G" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

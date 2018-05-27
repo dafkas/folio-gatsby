@@ -151,7 +151,7 @@ const Hippekip = () => (
                     Hippekip dames mode is een kledingzaak uit Rotterdam Ommoord. Ze verkopen betaalbare kleding voor een oudere doelgroep.
                     <a href="http://hippekipdamesmode.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/work/hippekip.png" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1D81XNlogqtgl0ZAbCuaelftILaI4hVUU" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

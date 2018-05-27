@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import styled from 'styled-components'
 
-import AllProjects from '../layouts/data/images.json'
+import AllProjects from '../pages/data/images.json'
 
 import FaList from 'react-icons/lib/md/list'
 import FaRight from 'react-icons/lib/md/chevron-right';

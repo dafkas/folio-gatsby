@@ -158,7 +158,7 @@ const Recnition = () => (
                     <a href="http://www.recnition.com" target="_blank"><Button><FaGlobe /> Live site</Button></a>
                     <a href="https://www.youtube.com/watch?v=DcHicKcSCsY&t=6s" target="_blank"><Button><FaYt />Demo video</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/projects/cctv.jpeg" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=150_1hICk41JjNGl2zdKEhm2tnsWua9jW" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

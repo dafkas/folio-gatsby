@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import Menu from './Menu';
 
-import ProfileImg from './img/marvin-round-white.png'
+import ProfileImg from '../pages/img/marvin-round-white.png'
 
 
 const HeaderContainer = styled.div`

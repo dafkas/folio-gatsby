@@ -152,7 +152,7 @@ const Api = () => (
                     <br />
                     <a href="https://github.com/dafkas/restful-app" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/projects/api.jpg" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1IhEntNo9IyFkmWIF0OgBh9YMQgEB8Jg7" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

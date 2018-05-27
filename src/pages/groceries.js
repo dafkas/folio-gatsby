@@ -4,6 +4,9 @@ import Link from 'gatsby-link'
 import Footer from '../components/Footer';
 import styled from 'styled-components'
 
+import FaGit from 'react-icons/lib/go/mark-github';
+import FaLeft from 'react-icons/lib/md/chevron-left';
+
 const Logo = styled.div`
   font-size:22px;
   margin: 0 auto;
@@ -145,9 +148,9 @@ const Groceries = () => (
                     <br /><br />
                     Zelf ben ik geen programmeur die van low level languages houdt. Deze app heb ik daarom zelf zo simpel mogelijkgehouden en puur de focus gelegd op gebruiksvriendelijkheid.
                     <br />
-                    <Button><FaGlobe /> Source code</Button>
+                    <Button><FaGit /> Source code</Button>
                 </InformationText>
-                <InformationImage className="post-image" src="img/projects/grocery-list.jpeg" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1_iMdw22aD9b-CUgpKZ8IriNdSI9raYiS" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

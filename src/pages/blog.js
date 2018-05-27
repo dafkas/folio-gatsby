@@ -153,9 +153,9 @@ const Blog = () => (
                     <br />
                     Het opgeleverde project is een Blog waarbij je zelf berichten kan beheren en plaatsen in een WYSIWYG editor.
                     <br />
-                    <a href="https://github.com/dafkas/MVC_blog" target="_blank"><Button><FaGlobe /> Source code</Button></a>
+                    <a href="https://github.com/dafkas/MVC_blog" target="_blank"><Button><FaGit /> Source code</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/projects/blog.jpeg" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1cD-GEpTkkS1nveaPaaMMNDLuLSOH-PzM" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

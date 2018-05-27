@@ -2,82 +2,82 @@
     "images": [
         {
             "name": "fedex",
-            "src": "../img/projects/fedex-plane.jpg",
+            "src": "https://drive.google.com/uc?id=1_3GU15tC8D97Qbr7vgnu4ZQO6Pu8hLsB",
             "category": "project"
         },
         {
             "name": "arbeidsbelmiddelaar",
-            "src": "../img/work/Arbeidsbelmiddelaar.png",
+            "src": "https://drive.google.com/uc?id=1Di8pDE5ovO2X_ENsTBscr0mSuUspTWQj",
             "category": "work"
         },
         {
             "name": "recnition",
-            "src": "../img/projects/cctv.jpeg",
+            "src": "https://drive.google.com/uc?id=150_1hICk41JjNGl2zdKEhm2tnsWua9jW",
             "category": "project"
         },
         {
             "name": "bettershaped",
-            "src": "../img/work/bettershaped.png",
+            "src": "https://drive.google.com/uc?id=1cNtpukyY4NoQzPMavlk3t9kKBYGbH5_X",
             "category": "work"
         },
         {
             "name": "blog",
-            "src": "../img/projects/blog.jpeg",
+            "src": "https://drive.google.com/uc?id=1cD-GEpTkkS1nveaPaaMMNDLuLSOH-PzM",
             "category": "project"
         },
         {
             "name": "flashtuning",
-            "src": "../img/work/flashtuning.png",
+            "src": "https://drive.google.com/uc?id=1kiHPeXO6soP-Zwws_BqydcxHrFkgvn0G",
             "category": "work"
         },
         {
             "name": "api",
-            "src": "../img/projects/api.jpg",
+            "src": "https://drive.google.com/uc?id=1IhEntNo9IyFkmWIF0OgBh9YMQgEB8Jg7",
             "category": "project"
         },
         {
             "name": "cvmeisje",
-            "src": "../img/work/cvmeisje.png",
+            "src": "https://drive.google.com/uc?id=1buf8rXF9z1rD9UVbzUr97YfoKJCArakN",
             "category": "work"
         },
         {
             "name": "calendar",
-            "src": "../img/projects/Calendar.jpeg",
+            "src": "https://drive.google.com/uc?id=1g95FmhvRdWGFhhIwvDVfHsjPztDs6la3",
             "category": "project"
         },
         {
             "name": "hippekip",
-            "src": "../img/work/hippekip.png",
+            "src": "https://drive.google.com/uc?id=1D81XNlogqtgl0ZAbCuaelftILaI4hVUU",
             "category": "work"
         },
         {
             "name": "toilet-roll",
-            "src": "../img/projects/toilet-roll.jpeg",
+            "src": "https://drive.google.com/uc?id=1lL0u5y5eKtEQfLeXrflSLev_4gNOEvpK ",
             "category": "project"
         },
         {
             "name": "penozevisuals",
-            "src": "../img/work/penozevisuals.png",
+            "src": "https://drive.google.com/uc?id=1gF7aTy8agsfk8rbygfF34j7wCc89dQZc",
             "category": "work"
         },
         {
             "name": "groceries",
-            "src": "../img/projects/grocery-list.jpeg",
+            "src": "https://drive.google.com/uc?id=1_iMdw22aD9b-CUgpKZ8IriNdSI9raYiS",
             "category": "project"
         },
         {
             "name": "rij-jb",
-            "src": "../img/work/rij-jb.png",
+            "src": "https://drive.google.com/uc?id=10g1rZt6pBMCCFE5_qOklgRtDtjl3vpbd",
             "category": "work"
         },
         {
             "name": "gallery",
-            "src": "../img/projects/gallery.jpg",
+            "src": "https://drive.google.com/uc?id=1MkiZeyDGIWQu8RicAITbI1liOv_wnhjV",
             "category": "project"
         },
         {
             "name": "src-applications",
-            "src": "../img/work/srcapplicaties.png",
+            "src": "https://drive.google.com/uc?id=1kwfMRHmdKgdzQ6yxYyy4JbrI8i3SdpOc",
             "category": "work"
         }
     ]

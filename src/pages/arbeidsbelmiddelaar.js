@@ -150,7 +150,7 @@ const Arbeidsbelmiddelaar = () => (
                     <br />
                     <a href="http://dearbeidsbelmiddelaar.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/work/arbeidsbelmiddelaar.png" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1Di8pDE5ovO2X_ENsTBscr0mSuUspTWQj" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

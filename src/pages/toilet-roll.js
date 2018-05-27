@@ -153,7 +153,7 @@ const toiletRoll = () => (
                     <br />
                     <a href="https://github.com/dafkas/Toiletroll-holder" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/projects/toilet-roll-concept.jpeg" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1lL0u5y5eKtEQfLeXrflSLev_4gNOEvpK" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

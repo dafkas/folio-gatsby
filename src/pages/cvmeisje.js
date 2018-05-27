@@ -151,7 +151,7 @@ const Cvmeisje = () => (
                     <br />
                     <a href="http://hetcvmeisje.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/work/cvmeisje.png" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1buf8rXF9z1rD9UVbzUr97YfoKJCArakN" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

@@ -151,7 +151,7 @@ const RijJb = () => (
                     <br />
                     <a href="http://rij-jb.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/work/rij-jb.png" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=10g1rZt6pBMCCFE5_qOklgRtDtjl3vpbd" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

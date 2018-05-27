@@ -152,7 +152,7 @@ const Penozevisuals = () => (
                     <br />
                     <a href="http://penozevisuals.com/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="img/work/penozevisuals.png" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1gF7aTy8agsfk8rbygfF34j7wCc89dQZc" />
             </InformationContainer>
         </ContentContainer>
         <Footer />
