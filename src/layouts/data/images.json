@@ -1,0 +1,84 @@
+{
+    "images": [
+        {
+            "name": "fedex",
+            "src": "./img/projects/fedex-plane.jpg",
+            "category": "project"
+        },
+        {
+            "name": "arbeidsbelmiddelaar",
+            "src": "../img/work/Arbeidsbelmiddelaar.png",
+            "category": "work"
+        },
+        {
+            "name": "recnition",
+            "src": "../img/projects/cctv.jpeg",
+            "category": "project"
+        },
+        {
+            "name": "bettershaped",
+            "src": "../img/work/bettershaped.png",
+            "category": "work"
+        },
+        {
+            "name": "blog",
+            "src": "../img/projects/blog.jpeg",
+            "category": "project"
+        },
+        {
+            "name": "flashtuning",
+            "src": "../img/work/flashtuning.png",
+            "category": "work"
+        },
+        {
+            "name": "api",
+            "src": "../img/projects/api.jpg",
+            "category": "project"
+        },
+        {
+            "name": "cvmeisje",
+            "src": "../img/work/cvmeisje.png",
+            "category": "work"
+        },
+        {
+            "name": "calendar",
+            "src": "../img/projects/Calendar.jpeg",
+            "category": "project"
+        },
+        {
+            "name": "hippekip",
+            "src": "../img/work/hippekip.png",
+            "category": "work"
+        },
+        {
+            "name": "toilet-roll",
+            "src": "../img/projects/toilet-roll.jpeg",
+            "category": "project"
+        },
+        {
+            "name": "penozevisuals",
+            "src": "../img/work/penozevisuals.png",
+            "category": "work"
+        },
+        {
+            "name": "groceries",
+            "src": "../img/projects/grocery-list.jpeg",
+            "category": "project"
+        },
+        {
+            "name": "rij-jb",
+            "src": "../img/work/rij-jb.png",
+            "category": "work"
+        },
+        {
+            "name": "gallery",
+            "src": "../img/projects/gallery.jpg",
+            "category": "project"
+        },
+        {
+            "name": "src-applications",
+            "src": "../img/work/srcapplicaties.png",
+            "category": "work"
+        }
+    ]
+}

@@ -3,45 +3,15 @@ import Link from 'gatsby-link'
 
 import styled from 'styled-components'
 
-import Menu from './menu'
-import About from './about'
+import Menu from './Menu';
 
-const Logo = styled.div`
-  font-size:20px;
-  margin: 0 auto;
-  float:left;
-  padding:20px;
-  color:#f7f7f7;
-  position: fixed;
-  z-index: 99;
-`;
+import ProfileImg from '../../public/img/marvin-round-white.png'
+
 
 const HeaderContainer = styled.div`
-  width:100%;
-  height:100%;
-  position:relative;
-`;
-
-const WelcomeBox = styled.div`
-  overflow: hidden;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  width:100%;
-  height:50%;
-  top:6%;
-`;
-
-const WelcomeBoxContainer = styled.div`
-  color:#f7f7f7;
-  width: 33%;
-  height: 50%;
-  background-color:#cccccc;
-  text-align:center;
-  border-radius:3px;
-  padding-top:3%;
-  border: 0.4px #333 solid;
+  width: 100%;
+  height: 660px;
+  background-color:#f7f7f7;
 `;
 
 const Hero = styled.div`
@@ -50,40 +20,34 @@ const Hero = styled.div`
 		      rgba(21, 19, 19, 0.45)
 		    ),url('https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d39fe8df8ff9407562e2f89aec3c1318&auto=format&fit=crop&w=1350&q=80');
   width:100%;
-  height:735px;
-  position:absolute;
-  display:block;
+  height:100%;
   background-repeat:no-repeat;
-  background-size:cover;
-  z-index:9;
-  margin-top: -150px;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center; 
 `;
 
+const ProfilePicture = styled.img`
+  width:200px;
+`;
+
 const WelcomeText = styled.p`
-  font-size:20px;
+  font-size:45px;
   color:#f7f7f7;
-  position:absolute;
-  z-index:10;
-  margin-top:50px;
 `;
 
 const UnderText = styled.p`
   font-size:16px;
   color:#f7f7f7;
-  position:absolute;
-  z-index:10;
-  margin-top:100px;
   letter-spacing: 1px;
 `;
 
 const AboutButton = styled.button`
-  position:absolute;
-  margin-top:175px;
   height: 50px;
-  width: 290px;
+  width: 240px;
   background-color: transparent;
   color: #f7f7f7;
   font-size: 14px;
@@ -96,7 +60,7 @@ const AboutButton = styled.button`
   }
 `;
 
-export default class Header extends React.Component {
+class Header extends React.Component {
   showSettings(event) {
     event.preventDefault();
   }
@@ -104,14 +68,17 @@ export default class Header extends React.Component {
   render() {
     return (
       <HeaderContainer>
-        <Logo>Marvin Holleman</Logo>
         <Menu />
         <Hero>
-          <WelcomeText className='welcome-text'>Hey.. Welkom op mijn website</WelcomeText>
-          <UnderText>Ik ben Marvin Holleman, een creatieve full-stack developer</UnderText>
-          <AboutButton>Klik hier om meer te lezen over mij...</AboutButton>
+          <WelcomeText className='welcome-text'>Hallo</WelcomeText>
+          <ProfilePicture src={ProfileImg} />
+          <WelcomeText className='welcome-text'>Welkom op mijn website</WelcomeText>
+          <UnderText className='under-text'>Ik ben Marvin Holleman, een creatieve full-stack developer</UnderText>
+
         </Hero>
       </HeaderContainer>
     );
   }
 }
+
+export default Header;
