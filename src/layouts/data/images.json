@@ -2,7 +2,7 @@
     "images": [
         {
             "name": "fedex",
-            "src": "./img/projects/fedex-plane.jpg",
+            "src": "../img/projects/fedex-plane.jpg",
             "category": "project"
         },
         {
