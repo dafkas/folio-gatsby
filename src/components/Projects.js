@@ -75,8 +75,8 @@ const Img = styled.img`
     vertical-align: middle;
     position: relative;
     float: left;
-    width: 288px;
-    height: 240px;
+    width: 337px;
+    height: 280px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
