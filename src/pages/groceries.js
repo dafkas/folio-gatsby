@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import Footer from '../components/Footer';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 import FaGit from 'react-icons/lib/go/mark-github';
 import FaLeft from 'react-icons/lib/md/chevron-left';

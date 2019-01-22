@@ -7,7 +7,6 @@ import styled from 'styled-components'
 import FaLeft from 'react-icons/lib/md/chevron-left';
 import FaGlobe from 'react-icons/lib/go/globe';
 
-
 const Logo = styled.div`
   font-size:22px;
   margin: 0 auto;

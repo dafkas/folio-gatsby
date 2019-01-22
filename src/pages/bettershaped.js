@@ -4,8 +4,9 @@ import Link from 'gatsby-link'
 import Footer from '../components/Footer';
 import styled from 'styled-components'
 
-import FaLeft from 'react-icons/lib/md/chevron-left';
+
 import FaGlobe from 'react-icons/lib/go/globe';
+import FaLeft from 'react-icons/lib/md/chevron-left';
 
 const Logo = styled.div`
   font-size:22px;

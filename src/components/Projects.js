@@ -1,19 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
 import styled from 'styled-components'
 
-import AllProjects from '../pages/data/images.json'
-
 import FaList from 'react-icons/lib/md/list'
+import FaMinus from 'react-icons/lib/fa/minus';
 import FaRight from 'react-icons/lib/md/chevron-right';
+
+import AllProjects from '../pages/data/images.json'
 
 const ProjectsContainer = styled.div`
     padding:45px;
     background-color:#f7f7f7;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
 `;
 
 const MoreProjectsContainer = styled.div`
@@ -43,38 +43,44 @@ const ProjectsTitle = styled.h1`
 `;
 
 const PhotosContainer = styled.div`
-
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-flow: wrap;
+    justify-content: center;
 `;
 
 const SingleImg = styled.div`
     cursor:pointer;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 
 const ShowMoreButton = styled.button`
-  height: 50px;
-  width: 200px;
-  background-color: transparent;
-  color: #333;
-  font-size: 14px;
-  font-family: 'Open sans';
+    height: 50px;
+    width: 200px;
+    background-color: #c7c7c7;
+    color: #716f6f;
+    font-size: 14px;
+    font-family: 'Open sans';
     opacity: 0.6;
-    border:none;
-  &:hover{
-    background-color:#505050;
-    color:#f7f7f7;
-    cursor:pointer;
-    transition: 0.3s;
-    opacity: 1.0;
-  }
+    border: 1px solid #c7c7c7;
+
+    &:hover{
+        background-color:#505050;
+        color:#f7f7f7;
+        cursor:pointer;
+        transition: 0.3s;
+        opacity: 1.0;
+    }
 `;
 
 const Img = styled.img`
     background-color: #f7f7f7;
     vertical-align: middle;
     position: relative;
-    float: left;
     width: 337px;
     height: 280px;
     background-position: 50% 50%;
@@ -82,8 +88,8 @@ const Img = styled.img`
     background-size: cover;
     object-fit:scale-down;
     margin-bottom:0px;
+    padding: 10px;
     
-
     &:hover{
         cursor:pointer;
     }
@@ -116,8 +122,9 @@ const Filter = styled.a`
     }
 `;
 
-
-
+const LinkContainer = styled.div`
+    position: absolute;
+`;
 
 
 class Projects extends React.Component {
@@ -125,109 +132,60 @@ class Projects extends React.Component {
         super();
         this.state = {
             showAllProjects: false,
-            filter: 'all',
-            projectsData: AllProjects
+            filter: 'work',
+            projectsData: AllProjects,
+            maxItems: 12,
         }
-        // const images = [{
-        //     name: 'fedex', url: ''
-        //     RecnitionImg,
-        //     BlogImg,
-        //     ApiImg,
-        //     CalendarImg,
-        //     GroceriesImg,
-        //     GalleryImg,
-        //     ToiletRollImg,
-        //     HippekipImg,
-        //     SrcImg,
-        //     CvMeisjeImg,
-        //     ArbeidsbelMiddelaarImg,
-        //     RijJbImg,
-        //     BettershapedImg,
-        //     PenozeVisualsImg,
-        //     FlashtuningImg
-        // }];
-        console.log(this.state.projectsData)
     }
 
-    _showProjects() {
-        if (!this.state.showAllProjects) {
-            return (
-                <ShowMoreLinkContainer>
-                    <ShowMoreButton onClick={(e) => this.setState({ showAllProjects: true })}><FaList size={20} /> Lees meer </ShowMoreButton>
-                </ShowMoreLinkContainer >
-            )
-        } else {
-            return (
-                <ShowMoreLinkContainer>
-                    <ShowMoreButton onClick={(e) => this.setState({ showAllProjects: false })}>Lees minder - </ShowMoreButton>
-                </ShowMoreLinkContainer >
-            )
-        }
-
+    showProjects = () => {
+        const { maxItems, showAllProjects } = this.state;
+        showAllProjects ? this.setState({ maxItems: 12, showAllProjects: !this.state.showAllProjects, }) : this.setState({ maxItems: 100 });
+        this.setState({
+            showAllProjects: !this.state.showAllProjects,
+        })
     }
 
-    _filterProjects() {
-        return (
-            <FilterContainer>
-                {
-                    this.state.filter == 'all' && <FilterContainer>
-                        <Filter><u>Alles</u></Filter>
-                        <Filter onClick={() => this.setState({ filter: 'web' })}>Web</Filter>
-                        <Filter onClick={() => this.setState({ filter: 'projects' })}>Projecten</Filter>
-                    </FilterContainer> ||
-                    this.state.filter == 'web' && <FilterContainer>
-                        <Filter onClick={() => this.setState({ filter: 'all' })}>Alles</Filter>
-                        <Filter><u>Web</u></Filter>
-                        <Filter onClick={() => this.setState({ filter: 'projects' })}>Projecten</Filter>
-                    </FilterContainer> ||
-                    this.state.filter == 'projects' && <FilterContainer>
-                        <Filter onClick={() => this.setState({ filter: 'all' })}>Alles</Filter>
-                        <Filter onClick={() => this.setState({ filter: 'web' })}>Web</Filter>
-                        <Filter><u>Projecten</u></Filter>
-                    </FilterContainer>
-                }
-            </FilterContainer>
-        )
+    filterItems = (filter) => {
+        this.setState({ filter });
     }
 
     render() {
+        const { maxItems, showAllProjects } = this.state;
+
+        console.log(maxItems);
+
         return (
             <ProjectsContainer>
                 <ProjectsTitle>Portfolio</ProjectsTitle>
-                {this._filterProjects()}
+                <FilterContainer>
+                    <Filter onClick={() => this.filterItems('work')}>Web</Filter>
+                    <Filter onClick={() => this.filterItems('project')}>Projecten</Filter>
+                </FilterContainer>
 
-                {this.state.projectsData.images.map((project) => (
-                    <PhotosContainer>
-                        <div>
-                            <Img className="imgClass" src={project.src} />
-                            <Link to={project.name}><ShowMoreButton className="showmore">Lees meer <FaRight /></ShowMoreButton></Link>
-                        </div>
-                    </PhotosContainer>
-                ))}
-
-                {/* {
-                    this.state.showAllProjects && <MoreProjectsContainer>
-                        <PhotosContainer>
-                            <Img className="imgClass" src={CalendarImg} />
-                            <Img className="imgClass" src={RijJbImg} />
-                            <Img className="imgClass" src={PenozeVisualsImg} />
-                            <Img className="imgClass" src={SrcImg} />
-                        </PhotosContainer>
-                        <PhotosContainer>
-                            <Img className="imgClass" src={ArbeidsbelMiddelaarImg} />
-                            <Img className="imgClass" src={ToiletRollImg} />
-                            <Img className="imgClass" src={BlogImg} />
-                            <Img className="imgClass" src={GalleryImg} />
-                        </PhotosContainer>
-                        <div className='container'>
-                            <Img className='image' src={GalleryImg} />
-                            <div className='overlay'>
-                                <div class="text">Hello World</div>
-                            </div>
-                        </div>
-                    </MoreProjectsContainer>
-                } */}
-                {this._showProjects()}
+                <PhotosContainer>
+                    {this.state.projectsData.images.slice(0, maxItems).map((project, i) => (
+                        !this.state.filter || this.state.filter === project.category && (
+                            <SingleImg>
+                                <Img className="imgClass" src="" />
+                                <LinkContainer>
+                                    <Link to={project.name}>
+                                        <ShowMoreButton className="showmore">Lees meer <FaRight /></ShowMoreButton>
+                                    </Link>
+                                </LinkContainer>
+                            </SingleImg>
+                        )
+                    ))}
+                </PhotosContainer>
+                <ShowMoreLinkContainer>
+                    <ShowMoreButton
+                        onClick={this.showProjects}
+                    >
+                        {!this.state.showAllProjects
+                            ? (<span> <FaList size={20} /> Lees meer</span>)
+                            : (<span> <FaMinus size={18} /> Lees minder</span>)}
+                    </ShowMoreButton>
+                </ShowMoreLinkContainer >
             </ProjectsContainer >
         );
     }

@@ -7,7 +7,6 @@ import FaMail from 'react-icons/lib/md/email'
 
 const AboutContainer = styled.div`
     color:#333;
-    /* padding:80px 100px 30px 100px; */
     margin:100px;
 `;
 
@@ -73,13 +72,15 @@ class About extends React.Component {
 
     render() {
         return (
-            <AboutContainer className='about-text'>
+            <AboutContainer>
                 <AboutTitle>Hallo, ik ben Marvin Holleman</AboutTitle>
                 <ContentContainer>
-                    <AboutText>Ik ben 22 jaar oud en woon in Rotterdam. Momenteel ben ik bezig met mijn studie Creative Media and Gametechnologies, voor mijn opleiding ben ik opzoek naar een stageplek als creatieve developer voor september 2018.<br /><br />
-                        Voor ik begonnen ben aan deze opleiding heb ik een vooropleiding Applicatie en mediaontwikkelaar gedaan aan het Zadkine in Rotterdam. Door mijn voorkennis heb ik bewust gekozen voor de opleiding Creative Media And Gametechnologies.<br /><br />
-                        In mijn vrije tijd ben ik druk bezig met het maken van simpele websites voor startende ondernemers. Klinkt dit interessant?<br /><br />
-                        <SendButton onClick={(e) => this._scrolltTo(3000)}><FaMail size={16} /> Neem contact op </SendButton></AboutText>
+                    <AboutText>
+                        23 jaren jong en wonend in Rotterdam. Momenteel ben ik bezig met mijn studie Creative Media and Gametechnologies.
+Voor ik begonnen ben aan deze opleiding heb ik een vooropleiding Applicatie en mediaontwikkelaar gedaan aan het Zadkine in Rotterdam. Door mijn voorkennis heb ik bewust gekozen voor de opleiding Creative Media And Gametechnologies.
+In mijn vrije tijd ben ik druk bezig met het maken van simpele websites voor startende ondernemers. Klinkt dit interessant?
+<br /><br />
+                        <SendButton onClick={(e) => this._scrolltTo(3000)}><FaMail /> Neem contact op </SendButton></AboutText>
 
                 </ContentContainer>
             </AboutContainer>

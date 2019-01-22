@@ -763,12 +763,6 @@ pre tt:after {
   text-align: center;
 }
 
-.showmore{
-  margin-top: 95px;
-    position: relative;
-    margin-left: -245px;
-}
-
 
 @media (max-width: 667px) and (min-width: 320px){
   .welcome-text{

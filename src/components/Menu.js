@@ -29,7 +29,6 @@ const MenuItem = styled.a`
 class sideBar extends React.Component {
     showSettings(event) {
         event.prevent
-        Default();
     }
 
     _scrolltTo(section) {

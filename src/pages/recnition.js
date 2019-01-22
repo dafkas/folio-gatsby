@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 import Footer from '../components/Footer';
 import styled from 'styled-components'
 
+import FaGit from 'react-icons/lib/go/mark-github';
 import FaLeft from 'react-icons/lib/md/chevron-left';
-import FaGlobe from 'react-icons/lib/go/globe';
 import FaYt from 'react-icons/lib/fa/youtube-play';
 
 const Logo = styled.div`

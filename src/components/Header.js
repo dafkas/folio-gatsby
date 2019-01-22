@@ -43,6 +43,7 @@ const UnderText = styled.p`
   font-size:16px;
   color:#f7f7f7;
   letter-spacing: 1px;
+  font-family: 'Open sans';
 `;
 
 const AboutButton = styled.button`

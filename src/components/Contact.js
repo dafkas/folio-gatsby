@@ -1,19 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
+import FaGit from 'react-icons/lib/go/mark-github';
 import FaRight from 'react-icons/lib/md/chevron-right';
+import { loadavg } from 'os';
 
 const ContactPageContainer = styled.div`
     padding:45px;
-    font-family: Lato, Helvetica, Arial, sans-serif;    text-transform: capitalize;
-
-      height: 500px;
+    font-family: Lato, Helvetica, Arial, sans-serif;    
+    text-transform: capitalize;
+    height: 500px;
 `
 
 const ContactTitle = styled.h1`
-   font-family: Lato-light, Helvetica, Arial, sans-serif;    text-transform: capitalize;
+    font-family: Lato-light, Helvetica, Arial, sans-serif;    
+    text-transform: capitalize;
     text-align:center;
     font-size: 26px;
     font-weight: 700;
@@ -50,7 +53,7 @@ const EmailInput = styled.input`
     margin-left:5px;
     color:#333;
     font-size:14px;
-        border: 1px #d0d0d0 solid;
+    border: 1px #d0d0d0 solid;
 `;
 
 const MessageArea = styled.textarea`
@@ -86,10 +89,32 @@ const SendButton = styled.button`
 `;
 
 const ErrorMessageBox = styled.div`
-    color:#333;
-    padding:15px;
-    font-size:15px;
+    color: #333;
+    padding: 15px;
+    font-size: 15px;
     text-transform: none;
+    display: flex;
+    margin: 0 auto;
+    width: 83.5%;
+    justify-content: flex-start;
+    margin-top: -80px;
+`;
+
+const Loader = styled.div`
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0b0c0c;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: LoaderKeyFrames 2s linear infinite;
+    animation: LoaderKeyFrames 1s linear infinite;
+    display: inline-block;
+    margin-right: 10px;
+
+    @keyframes LoaderKeyFrames {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+  }
 `;
 
 
@@ -97,31 +122,48 @@ class Contact extends React.Component {
     constructor() {
         super();
         this.state = {
-            message: ''
+            message: '',
+            showTimer: false,
+            inputValue: '',
         }
     }
 
-    _showMessage() {
-        this.setState({
-            message: "Oeps er is iets fout gegaan... U kunt contact opnemen via dit email adres: Marvin.holleman@hotmail.nl"
-        })
+    showMessage = (e) => {
+        const { name, email, message } = e.target;
+        if (!name.value || !email.value || !message.value) {
+            this.setState({
+                message: "Een of meerdere velden zijn leeg!",
+            })
+        } else {
+            this.setState({ showTimer: true, message: "", });
+            setTimeout(() => {
+                this.setState({
+                    message: "Uw bericht is succesvol verzonden.",
+                    showTimer: false,
+                })
+            }, 2000);
+        }
     }
 
     render() {
         return (
-            <ContactPageContainer>
-                <ContactTitle>Contact</ContactTitle>
-                <ContactFormContainer>
-                    <NameInput placeholder="Naam *" />
-                    <EmailInput placeholder="Email *" />
-                </ContactFormContainer>
-                <MessageBoxContainer>
-                    <MessageArea placeholder="Bericht *" />
-                </MessageBoxContainer>
-                <SendButtonContainer>
-                    <SendButton className='send-button' onClick={(e) => this._showMessage()}>Verzenden <FaRight /></SendButton>
-                </SendButtonContainer>
-                <ErrorMessageBox><p>{this.state.message}</p></ErrorMessageBox>
+            <ContactPageContainer onSubmit={(e) => { e.preventDefault(); this.showMessage(e); }}>
+                <form>
+                    <ContactTitle>Contact</ContactTitle>
+                    <ContactFormContainer>
+                        <NameInput name="name" placeholder="Naam *" />
+                        <EmailInput name="email" type="email" placeholder="Email *" />
+                    </ContactFormContainer>
+                    <MessageBoxContainer>
+                        <MessageArea name="message" placeholder="Bericht *" />
+                    </MessageBoxContainer>
+                    <SendButtonContainer>
+                        <SendButton className='send-button' >Verzenden <FaRight /></SendButton>
+                    </SendButtonContainer>
+                    <ErrorMessageBox>
+                        <p>{this.state.showTimer && (<Loader />)}{this.state.message}</p>
+                    </ErrorMessageBox>
+                </form>
             </ContactPageContainer>
         );
     }
