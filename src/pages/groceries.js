@@ -148,7 +148,7 @@ const Groceries = () => (
                     <br /><br />
                     Zelf ben ik geen programmeur die van low level languages houdt. Deze app heb ik daarom zelf zo simpel mogelijkgehouden en puur de focus gelegd op gebruiksvriendelijkheid.
                     <br />
-                    <Button><FaGit /> Source code</Button>
+                    <Button><FaGit size={18} style={{ marginTop: '-2.5px' }} /> Source code</Button>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1_iMdw22aD9b-CUgpKZ8IriNdSI9raYiS" />
             </InformationContainer>

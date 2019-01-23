@@ -150,7 +150,7 @@ const Api = () => (
                     Bij dit project was het belangrijk dat je een restful api bouwde die voldeed aan de rest principes. Op school werden lessen gegeven in VueJs maar ik heb voor React gekozen.
                     Ik had nog geen ervaring met React en heb de kans gegrepen het te gaan leren. Na dit project heb ik geen andere front-end techniek meer gebruikt.
                     <br />
-                    <a href="https://github.com/dafkas/restful-app" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
+                    <a href="https://github.com/dafkas/restful-app" target="_blank"><Button><FaGit FaMail size={18} style={{ marginTop: '-2.5px' }} /> Source code</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1IhEntNo9IyFkmWIF0OgBh9YMQgEB8Jg7" />
             </InformationContainer>

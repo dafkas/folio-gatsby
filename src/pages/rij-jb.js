@@ -149,7 +149,7 @@ const RijJb = () => (
                     <br />
                     Autorijschool JB is mijn oude rijschool, waar ik mijn rijbewijs heb gehaald.
                     <br />
-                    <a href="http://rij-jb.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
+                    <a href="http://rij-jb.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=10g1rZt6pBMCCFE5_qOklgRtDtjl3vpbd" />
             </InformationContainer>

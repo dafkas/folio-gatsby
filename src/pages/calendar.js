@@ -151,7 +151,7 @@ const Calendar = () => (
                     <br /><br />
                     Wat belangrijk was bij dit project is dat het reserveringssysteem makkelijk was in gebruik en er visueel een kalender zou komen waar je op elke dag van de maand kon klikken om een kinderfeestje in te boeken.
                     <br />
-                    <a href="https://github.com/dafkas/reservation-rollebollebos" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
+                    <a href="https://github.com/dafkas/reservation-rollebollebos" target="_blank"><Button><FaGit size={18} style={{ marginTop: '-2.5px' }} /> Source code</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1g95FmhvRdWGFhhIwvDVfHsjPztDs6la3" />
             </InformationContainer>

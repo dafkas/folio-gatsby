@@ -149,7 +149,7 @@ const Gallery = () => (
                     <br /><br />
                     Ik heb deze fotogallerij webapp gemaakt om mijn laravel skills wat aan te scherpen. In mijn vrije tijd veel uren achter elkaar werken en kijken hoe lang ik erover zou doen om deze af te krijgen.
                     <br /><br />Na het registreren en inloggen is het mogelijk om een gallerij aan te maken en daar afbeeldingen aan toe te voegen. Deze kunnen uiteraard ook weer verwijderd worden.<br />
-                    <a href="https://github.com/dafkas/gallery" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
+                    <a href="https://github.com/dafkas/gallery" target="_blank"><Button><FaGit size={18} style={{ marginTop: '-2.5px' }} /> Source code</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1MkiZeyDGIWQu8RicAITbI1liOv_wnhjV" />
             </InformationContainer>

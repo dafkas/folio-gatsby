@@ -149,7 +149,7 @@ const Bettershaped = () => (
                 <InformationText className="post-text">Uitgebreide op maat gemaakte custom Wordpress website.<br /><br />
                     Roberto Elan biedt personaltrainingpakketten aan. Deze verschillen van basis pakketten tot zeer uitgebreide pakketten.
                     <br />
-                    <a href="http://bettershapedworld.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
+                    <a href="http://bettershapedworld.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1cNtpukyY4NoQzPMavlk3t9kKBYGbH5_X" />
             </InformationContainer>

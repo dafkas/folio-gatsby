@@ -149,7 +149,7 @@ const Src = () => (
                     <br />
                     SRC-applicaties is een bedrijf wat werkt in de brandbeveiliging.
                     <br />
-                    <a href="http://src-applicaties.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
+                    <a href="http://src-applicaties.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1kwfMRHmdKgdzQ6yxYyy4JbrI8i3SdpOc" />
             </InformationContainer>

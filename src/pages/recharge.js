@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 import Footer from '../components/Footer';
 import styled from 'styled-components'
 
-import FaLeft from 'react-icons/lib/md/chevron-left';
 import FaGlobe from 'react-icons/lib/go/globe';
+import FaLeft from 'react-icons/lib/md/chevron-left';
 
 const Logo = styled.div`
   font-size:22px;
@@ -110,8 +110,8 @@ const InformationText = styled.p`
 
 const InformationImage = styled.img`
     object-fit: scale-down;
-    width: 500px;
-    height: 375px;
+    width: 530px;
+    height: 400px;
 `;
 
 const Button = styled.button`
@@ -133,28 +133,29 @@ const Button = styled.button`
     }
 `;
 
-const Flashtuning = () => (
+const recharge = () => (
     <div>
         <Link to='/' ><Logo>Marvin Holleman</Logo></Link>
         <Link to='/' ><Back><FaLeft />Ga terug</Back></Link>
         <ContentContainer>
-            <PageTitle>Flashtuning</PageTitle>
+            <PageTitle>#Recharge</PageTitle>
             <TechniquesContainer>
-                <Technique>Wordpress</Technique>
-                <Technique>HTML</Technique>
-                <Technique>CSS</Technique>
+                <Technique>React Native</Technique>
+                <Technique>Redux</Technique>
+                <Technique>Styled Components</Technique>
             </TechniquesContainer>
             <InformationContainer className="post-information">
-                <InformationText className="post-text">Uitgebreide op maakt gemaakte custom Wordpress website.<br /><br />
-                    Flashtuning is een tuningbedrijf. Hier worden auto's gechiptuned voor de echte liefhebber.
+                <InformationText className="post-text">Recharge is een project wat er voor zorgt dat je je gelukkiger voelt. De Recharge programma’s helpen je focussen op wat voor jou belangrijk is. Want daar krijg je energie van. Meer focus, richting en energie zorgen voor meer geluk. Er zijn veel grote bedrijven die het Recharge programma hebben gevolgd en met succes!
+                <br /><br />
+                    De Recharge app is gebouwd in React Native met Expo als tool, door het gebruik van Expo wordt het testen en builden van de applicatie een stuk makkelijker gemaakt. Voor het afhandelen van de state binnen de applicatie is Redux gebruikt en Styled Components voor het toevoegen van styling binnen de applicatie.
                     <br />
-                    <a href="http://www.flashtuning.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
+                    <a href="https://hashtagrecharge.com/.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Website</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1kiHPeXO6soP-Zwws_BqydcxHrFkgvn0G" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1ElcVBWlzYv8DyRi4LrIBj_-KB_moc1ia" />
             </InformationContainer>
         </ContentContainer>
         <Footer />
     </div>
 )
 
-export default Flashtuning
+export default recharge

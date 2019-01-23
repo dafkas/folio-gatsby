@@ -156,8 +156,8 @@ const Recnition = () => (
                     <br />
                     Met dit concept zijn we nog steeds bezig in onze eigen tijd en zo hebben we recentelijk nog een gesprek gehad met een winkel voor de pilot.
                     <br />
-                    <a href="http://www.recnition.com" target="_blank"><Button><FaGlobe /> Live site</Button></a>
-                    <a href="https://www.youtube.com/watch?v=DcHicKcSCsY&t=6s" target="_blank"><Button><FaYt />Demo video</Button></a>
+                    <a href="http://www.recnition.com" target="_blank"><Button><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
+                    <a href="https://www.youtube.com/watch?v=DcHicKcSCsY&t=6s" target="_blank"><Button><FaYt size={18} style={{ marginTop: '-2.5px', marginRight: '3px' }} />Demo video</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=150_1hICk41JjNGl2zdKEhm2tnsWua9jW" />
             </InformationContainer>

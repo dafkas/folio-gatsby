@@ -149,7 +149,7 @@ const Hippekip = () => (
                 <InformationText className="post-text">Uitgebreide op maat gemaakte custom Wordpress webshop.
                     <br /><br />
                     Hippekip dames mode is een kledingzaak uit Rotterdam Ommoord. Ze verkopen betaalbare kleding voor een oudere doelgroep.
-                    <a href="http://hippekipdamesmode.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
+                    <a href="http://hippekipdamesmode.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1D81XNlogqtgl0ZAbCuaelftILaI4hVUU" />
             </InformationContainer>

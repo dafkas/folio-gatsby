@@ -148,7 +148,7 @@ const Cvmeisje = () => (
                 <InformationText className="post-text">HTML CSS template met Wordpress als CMS. <br /><br />
                     Het CV meisje biedt ondersteuning aan bij het profileren van jezelf. Denk aan manier zoals het oppimpen van je LinkedIn profiel tot het maken van een CV.
                     <br />
-                    <a href="http://hetcvmeisje.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
+                    <a href="http://hetcvmeisje.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1buf8rXF9z1rD9UVbzUr97YfoKJCArakN" />
             </InformationContainer>

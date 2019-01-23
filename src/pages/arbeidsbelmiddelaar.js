@@ -147,7 +147,7 @@ const Arbeidsbelmiddelaar = () => (
             <InformationContainer className="post-information">
                 <InformationText className="post-text">Uitgebreide op maat gemaakte custom Wordpress website.<br /><br />De Arbeidsbelmiddelaar biedt hulp aan bij het creëren van een arbeidsprofiel, zodat de clienten snel aan een baan kunnen komen.
                     <br />
-                    <a href="http://dearbeidsbelmiddelaar.nl/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
+                    <a href="http://dearbeidsbelmiddelaar.nl/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1Di8pDE5ovO2X_ENsTBscr0mSuUspTWQj" />
             </InformationContainer>

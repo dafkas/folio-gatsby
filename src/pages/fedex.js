@@ -111,8 +111,8 @@ const InformationText = styled.p`
 
 const InformationImage = styled.img`
     object-fit: scale-down;
-    width: 440px;
-    height: 306px;
+    width: 530px;
+    height: 400px;
 `;
 
 const Button = styled.button`
@@ -143,6 +143,7 @@ const Fedex = () => (
             <TechniquesContainer>
                 <Technique>React Native</Technique>
                 <Technique>Node Js</Technique>
+                <Technique>Styled Components</Technique>
             </TechniquesContainer>
             <InformationContainer className="post-information">
                 <InformationText className="post-text">Voor dit schoolproject hebben we een caseowner gekregen. De caseowner is FedEx, deze manier van werken motiveerd mensen soms meer omdat het realistischer is.<br /><br />
@@ -153,9 +154,9 @@ const Fedex = () => (
                     <br />
                     Hierbij maken wij gebruik van React Native voor de native app en Node Js voor de back-end.
                     <br />
-                    <a href="https://github.com/dafkas/fedex-app-backend" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
+                    <a href="https://github.com/dafkas/fedex-app-backend" target="_blank"><Button><FaGit size={18} style={{ marginTop: '-2.5px' }} /> Source code</Button></a>
                 </InformationText>
-                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1_3GU15tC8D97Qbr7vgnu4ZQO6Pu8hLsB" />
+                <InformationImage className="post-image" src="https://drive.google.com/uc?id=1GWgL2pubID6EEFw3eNT-8AdQoK5J4NpM" />
             </InformationContainer>
         </ContentContainer>
         <Footer />

@@ -48,6 +48,8 @@ const PhotosContainer = styled.div`
     max-width: 100%;
     flex-flow: wrap;
     justify-content: center;
+    margin: 0 auto;
+    
 `;
 
 const SingleImg = styled.div`
@@ -81,12 +83,12 @@ const Img = styled.img`
     background-color: #f7f7f7;
     vertical-align: middle;
     position: relative;
-    width: 337px;
-    height: 280px;
+    width: 350px;
+    height: 275px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit:scale-down;
+    object-fit: fill;
     margin-bottom:0px;
     padding: 10px;
     
@@ -134,13 +136,13 @@ class Projects extends React.Component {
             showAllProjects: false,
             filter: 'work',
             projectsData: AllProjects,
-            maxItems: 12,
+            maxItems: 15,
         }
     }
 
     showProjects = () => {
         const { maxItems, showAllProjects } = this.state;
-        showAllProjects ? this.setState({ maxItems: 12, showAllProjects: !this.state.showAllProjects, }) : this.setState({ maxItems: 100 });
+        showAllProjects ? this.setState({ maxItems: 14, showAllProjects: !this.state.showAllProjects, }) : this.setState({ maxItems: 100 });
         this.setState({
             showAllProjects: !this.state.showAllProjects,
         })
@@ -148,6 +150,7 @@ class Projects extends React.Component {
 
     filterItems = (filter) => {
         this.setState({ filter });
+        console.log(this.state.filter)
     }
 
     render() {
@@ -160,14 +163,16 @@ class Projects extends React.Component {
                 <ProjectsTitle>Portfolio</ProjectsTitle>
                 <FilterContainer>
                     <Filter onClick={() => this.filterItems('work')}>Web</Filter>
+                    <Filter onClick={() => this.filterItems('app')}>Apps</Filter>
                     <Filter onClick={() => this.filterItems('project')}>Projecten</Filter>
                 </FilterContainer>
 
                 <PhotosContainer>
                     {this.state.projectsData.images.slice(0, maxItems).map((project, i) => (
-                        !this.state.filter || this.state.filter === project.category && (
+                        this.state.filter === project.category && (
                             <SingleImg>
-                                <Img className="imgClass" src="" />
+                                {console.log(project.category)}
+                                <Img className="imgClass" src={project.src} />
                                 <LinkContainer>
                                     <Link to={project.name}>
                                         <ShowMoreButton className="showmore">Lees meer <FaRight /></ShowMoreButton>

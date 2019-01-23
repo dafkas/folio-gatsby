@@ -150,7 +150,7 @@ const Penozevisuals = () => (
                     <br />
                     Penozevisuals is een bedrijf wat meerdere diensten aanbied. Momenteel ligt de focus bij het filmen en editen van opdrachten op aanvraag.
                     <br />
-                    <a href="http://penozevisuals.com/" target="_blank"><Button ><FaGlobe /> Live site</Button></a>
+                    <a href="http://penozevisuals.com/" target="_blank"><Button ><FaGlobe size={18} style={{ marginTop: '-2.5px' }} /> Live site</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1gF7aTy8agsfk8rbygfF34j7wCc89dQZc" />
             </InformationContainer>

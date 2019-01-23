@@ -151,7 +151,7 @@ const toiletRoll = () => (
                     <br /><br />
                     Hiernaast zie je de houder in actie.
                     <br />
-                    <a href="https://github.com/dafkas/Toiletroll-holder" target="_blank"><Button><FaGit size={16} /> Source code</Button></a>
+                    <a href="https://github.com/dafkas/Toiletroll-holder" target="_blank"><Button><FaGit size={18} style={{ marginTop: '-2.5px' }} /> Source code</Button></a>
                 </InformationText>
                 <InformationImage className="post-image" src="https://drive.google.com/uc?id=1lL0u5y5eKtEQfLeXrflSLev_4gNOEvpK" />
             </InformationContainer>

@@ -80,7 +80,7 @@ class About extends React.Component {
 Voor ik begonnen ben aan deze opleiding heb ik een vooropleiding Applicatie en mediaontwikkelaar gedaan aan het Zadkine in Rotterdam. Door mijn voorkennis heb ik bewust gekozen voor de opleiding Creative Media And Gametechnologies.
 In mijn vrije tijd ben ik druk bezig met het maken van simpele websites voor startende ondernemers. Klinkt dit interessant?
 <br /><br />
-                        <SendButton onClick={(e) => this._scrolltTo(3000)}><FaMail /> Neem contact op </SendButton></AboutText>
+                        <SendButton onClick={(e) => this._scrolltTo(3000)}><FaMail size={18} style={{ marginTop: '-2.5px' }} /> Neem contact op </SendButton></AboutText>
 
                 </ContentContainer>
             </AboutContainer>
