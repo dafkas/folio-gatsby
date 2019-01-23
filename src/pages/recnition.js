@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import FaGit from 'react-icons/lib/go/mark-github';
 import FaLeft from 'react-icons/lib/md/chevron-left';
 import FaYt from 'react-icons/lib/fa/youtube-play';
+import FaGlobe from 'react-icons/lib/go/globe';
 
 const Logo = styled.div`
   font-size:22px;
