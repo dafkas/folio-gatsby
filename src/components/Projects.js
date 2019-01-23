@@ -174,7 +174,7 @@ class Projects extends React.Component {
                                 {console.log(project.category)}
                                 <Img className="imgClass" src={project.src} />
                                 <LinkContainer>
-                                    <Link to={project.name}><ShowMoreButton className="showmore">Lees meer <FaRight /></ShowMoreButton></Link>
+                                    <ShowMoreButton onClick={() => window.location.href = project.name} className="showmore">Lees meer <FaRight /></ShowMoreButton>
                                 </LinkContainer>
                             </SingleImg>
                         )
